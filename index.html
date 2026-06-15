@@ -1,214 +1,528 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방화 노래방 이벤트 | 끝판왕 급 떡상 프로모션</title>
+    <meta name="description" content="방화 노래방 이벤트, 여기서 끝내자. 24시 흥폭발, 최신 시설, 주차 완비. 전화 010-6279-0862. 지금 바로 예약하고 파격 혜택 받아라.">
+    <meta name="keywords" content="방화 노래방, 방화 노래방 이벤트, 방화 가성비 노래방, 방화 24시 노래방, 방화 코인노래방, 방화 단체 노래방">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://t3b08-bh-kb-evt-1.vercel.app/">
+    
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:title" content="방화 노래방 이벤트 | 끝판왕 급 떡상 프로모션">
+    <meta property="og:description" content="방화 노래방 이벤트, 여기서 끝내자. 24시 흥폭발, 최신 시설, 주차 완비. 전화 010-6279-0862.">
+    <meta property="og:url" content="https://t3b08-bh-kb-evt-1.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="방화 노래방 이벤트 | 끝판왕 급 떡상 프로모션">
+    <meta name="twitter:description" content="방화 노래방 이벤트, 여기서 끝내자. 24시 흥폭발, 최신 시설, 주차 완비. 전화 010-6279-0862.">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "방화 노래방 이벤트",
+        "description": "방화 지역 최고의 노래방 이벤트와 프로모션. 24시 운영, 최신 시설, 주차 완비.",
+        "telephone": "+82-10-6279-0862",
+        "url": "https://t3b08-bh-kb-evt-1.vercel.app/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "방화",
+            "addressRegion": "서울특별시",
+            "addressCountry": "KR"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        ]
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Palatino Linotype', 'Book Antiqua', serif;
+            background-color: #0d1117;
+            color: #f0f4f8;
+            line-height: 1.8;
+            letter-spacing: 0.04em;
+            word-break: keep-all;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+            color: #f0f4f8;
+        }
+        h1 { font-size: clamp(2.8rem, 8vw, 5rem); margin-bottom: 1.5rem; }
+        h2 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 2rem; }
+        h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1.2rem; }
+        p { margin-bottom: 1.5rem; letter-spacing: 0.03em; }
+        a { color: #635bff; text-decoration: none; border-bottom: 1px solid rgba(99, 91, 255, 0.3); transition: border-color 0.2s; }
+        a:hover { border-bottom-color: #635bff; }
+        strong { color: #f0f4f8; font-weight: 700; }
+
+        /* Drop Cap - first paragraph after heading */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.2em;
+            line-height: 0.8;
+            margin-right: 0.4rem;
+            margin-top: 0.15rem;
+            font-weight: 700;
+            color: #635bff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 48px;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 32px 0 24px;
+            border-bottom: 1px solid rgba(240, 244, 248, 0.12);
+            position: relative;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #f0f4f8;
+            border: none;
+        }
+        .logo span { color: #635bff; }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+        nav a {
+            font-size: 0.95rem;
+            letter-spacing: 0.06em;
+            border: none;
+            padding-bottom: 4px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+        nav a:hover { border-bottom-color: #635bff; }
+
+        /* Hamburger Menu */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 8px; }
+        .hamburger span { display: block; width: 28px; height: 2px; background: #f0f4f8; transition: 0.3s; }
+        .nav-mobile { display: none; }
+        .nav-toggle { display: none; }
+        .nav-toggle:checked ~ .nav-mobile { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #0d1117; border-bottom: 1px solid rgba(240,244,248,0.12); padding: 24px 48px; gap: 16px; z-index: 100; }
+        .nav-toggle:checked ~ .nav-mobile a { font-size: 1.2rem; border: none; padding: 8px 0; }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 120px;
+            position: relative;
+            background: linear-gradient(135deg, #0d1117 0%, #1a1a2e 40%, #0d1117 100%);
+            border-bottom: 2px solid rgba(99, 91, 255, 0.2);
+            margin-bottom: 80px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(99, 91, 255, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero .container { position: relative; z-index: 1; }
+        .hero h1 { border-left: 4px solid #635bff; padding-left: 24px; }
+        .hero p { font-size: 1.15rem; letter-spacing: 0.05em; color: rgba(240, 244, 248, 0.8); max-width: 600px; }
+        .hero-phone {
+            display: inline-block;
+            margin-top: 24px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #635bff;
+            border: 2px solid rgba(99, 91, 255, 0.4);
+            padding: 12px 32px;
+            transition: all 0.3s;
+        }
+        .hero-phone:hover { border-color: #635bff; background: rgba(99, 91, 255, 0.08); }
+
+        /* Sections */
+        section { padding: 32px 0; margin-bottom: 80px; }
+        .section-title {
+            border-bottom: 2px solid rgba(99, 91, 255, 0.3);
+            padding-bottom: 16px;
+            margin-bottom: 40px;
+        }
+
+        /* Event Highlights */
+        .event-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        .event-item {
+            border-left: 3px solid #635bff;
+            padding: 24px 32px;
+            background: rgba(99, 91, 255, 0.04);
+            transition: background 0.3s;
+        }
+        .event-item:hover { background: rgba(99, 91, 255, 0.08); }
+        .event-item h3 { margin-bottom: 8px; }
+        .event-item .price { font-size: 2rem; font-weight: 700; color: #635bff; letter-spacing: 0.06em; }
+
+        /* UGC Review Cards */
+        .review-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        .review-card {
+            border: 1px solid rgba(240, 244, 248, 0.15);
+            padding: 32px;
+            background: rgba(240, 244, 248, 0.02);
+        }
+        .review-card .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            color: rgba(240, 244, 248, 0.6);
+        }
+        .review-card .stars { color: #635bff; letter-spacing: 0.1em; }
+        .review-card blockquote {
+            font-style: italic;
+            line-height: 1.8;
+            border-left: 2px solid rgba(99, 91, 255, 0.3);
+            padding-left: 20px;
+        }
+
+        /* Feature / Info */
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        .feature-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(240, 244, 248, 0.08);
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .feature-list li::before {
+            content: '◆';
+            color: #635bff;
+            font-size: 0.8rem;
+            margin-top: 6px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(240, 244, 248, 0.12);
+            padding: 48px 0;
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            color: rgba(240, 244, 248, 0.5);
+        }
+        footer a { border: none; }
+        footer .copyright { margin-top: 16px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            header { padding: 24px 0; }
+            nav ul { display: none; }
+            .hamburger { display: flex; }
+            .hero { padding: 48px 0 80px; margin-bottom: 48px; }
+            .hero h1 { padding-left: 16px; }
+            .hero-phone { font-size: 1.4rem; padding: 10px 24px; }
+            section { margin-bottom: 48px; }
+            .event-item { padding: 20px; }
+            .review-card { padding: 24px; }
+            .review-card .meta { flex-direction: column; align-items: flex-start; gap: 8px; }
+            footer { padding: 32px 0; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .hero-phone { font-size: 1.2rem; padding: 8px 16px; }
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
+<header>
+    <div class="container header-inner">
+        <a href="/" class="logo">방화<span>★</span>노래방</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+        <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#event">이벤트</a></li>
+                <li><a href="#review">후기</a></li>
+                <li><a href="#info">정보</a></li>
+                <li><a href="tel:01062790862">전화</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <a href="#event">이벤트</a>
+            <a href="#review">후기</a>
+            <a href="#info">정보</a>
+            <a href="tel:01062790862">전화</a>
+        </nav>
+    </div>
+</header>
 
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
+<main>
+    <section class="hero">
 
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 마포 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>아날로그 문화 컬렉터들이 선정한 마포 셔츠룸 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+<!-- SEO Visual 1: 방화 노래방 이벤트 Midnight Glass Hero -->
+<div class="seo-visual-hero" role="img" aria-label="코인 노래방 정보 — 방화 방화 노래방 이벤트" 
+     style="width:100%;height:300px;background:#0d1117;border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;margin:24px 0;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, rgba(99,91,255,0.08), transparent 70%)"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;z-index:2">
+    <div style="font-family:monospace;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.25em;color:#94a3b8;margin-bottom:12px;text-shadow:0 2px 4px rgba(0,0,0,0.5)">// SEO_METRICS</div>
+    <div style="font-size:3.5em;margin-bottom:8px">🎤</div>
+    <div style="font-size:1.4em;font-weight:700;letter-spacing:-0.03em;color:#ffffff">방화 노래방 이벤트</div>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"방화 노래방 이벤트","description":"코인 노래방 정보","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+        <div class="container">
+            <h1>방화 노래방<br>이벤트는<br><span style="color:#635bff;">여기</span>다.</h1>
+            <p class="drop-cap">네가 방화에서 노래방을 찾는다면, 이미 반은 온 거야. 나머지 반은 이 미친 이벤트를 보고 결정해. 24시, 최신 시설, 주차 완비. 가격? 진짜 파격. 전화 한 통이면 끝.</p>
+            <a href="tel:01062790862" class="hero-phone">010-6279-0862</a>
+        </div>
+    </section>
+
+<!-- SEO Visual 2: 노래방 Midnight Glass Cards -->
+<div class="seo-visual-cards" role="img" aria-label="방화 노래방 이벤트 노래방 — 코인 노래방 정보" 
+     style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin:32px 0">
+  <div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">🎤</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">특화</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 방화 노래방 이벤트</div>
+  </div><div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">🎵</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">다수 실적</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 방화 노래방 이벤트</div>
+  </div><div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">🎹</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">고품질</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 방화 노래방 이벤트</div>
+  </div>
+</div>
+
+    <section id="event" class="container">
+        <h2 class="section-title">파격 이벤트 · 지금</h2>
+        <div class="event-grid">
+            <div class="event-item">
+                <h3>🔥 새벽 타임 특가</h3>
+                <p>밤샘 부르는 가격. 22시~06시, 2시간에 <span class="price">15,000원</span>.</p>
+                <p>음료 무한 리필. 이 가격에 이 퀄리티? 방화에서 여기뿐이다.</p>
+            </div>
+            <div class="event-item">
+                <h3>🎤 단체 패키지</h3>
+                <p>4인 이상 예약 시 <span class="price">30% 할인</span>. 룸 업그레이드 + 안주 세트 증정.</p>
+                <p>친구들 끌어모아. 여기서 놀면 니가 인싸.</p>
+            </div>
+            <div class="event-item">
+                <h3>💥 생일자 무료</h3>
+                <p>본인 생일 당일, 2시간 무료. (신분증 필수, 친구 2인 이상 동반 시 적용)</p>
+                <p>생일 빵 터뜨리러 여기로 와. 케이크도 준비해줌.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="review" class="container">
+        <h2 class="section-title">실시간 후기 · 증언</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="meta">
+                    <span>김** (방화동)</span>
+                    <span>2024-12-15</span>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <blockquote>“방화에서 이렇게 시설 좋은 노래방 처음. 이벤트 가격에 속아서 갔는데, 오히려 내가 속은 기분. 너무 좋아서 2차 예약함.”</blockquote>
+            </div>
+            <div class="review-card">
+                <div class="meta">
+                    <span>이** (화곡동)</span>
+                    <span>2024-11-28</span>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <blockquote>“단체로 갔는데 30% 할인 미쳤다. 안주도 푸짐하고, 직원들도 친절. 여기 아니면 다른 데 못 가.”</blockquote>
+            </div>
+            <div class="review-card">
+                <div class="meta">
+                    <span>박** (마곡)</span>
+                    <span>2024-10-20</span>
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <blockquote>“생일 무료 이벤트 보고 갔는데 진짜 무료였다. 친구들이 부러워했음. 다음 생일도 여기다.”</blockquote>
+            </div>
+            <div class="review-card">
+                <div class="meta">
+                    <span>최** (염창동)</span>
+                    <span>2024-09-05</span>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <blockquote>“새벽 타임 가성비 끝판왕. 2시간에 만오천원에 음료 무한? 방화에서 이 조건 찾지 마라. 없다.”</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="container">
+        <h2 class="section-title">왜 여기인가 · 이유</h2>
+        <ul class="feature-list">
+            <li><strong>24시 운영</strong> — 새벽까지 흥이 안 죽는다. 니가 놀고 싶을 때까지.</li>
+            <li><strong>최신 음향 & 조명</strong> — JBL 사운드, LED 조명. 클럽 부럽지 않다.</li>
+            <li><strong>주차 완비</strong> — 차 가져와도 OK. 방화에서 주차 걱정 끝.</li>
+            <li><strong>파격 이벤트</strong> — 위에 있는 거 다 진짜. 거짓말 안 한다.</li>
+            <li><strong>방화 역세권</strong> — 방화역에서 도보 3분. 찾기 쉽다.</li>
+        </ul>
+        <p class="drop-cap" style="margin-top:40px;">솔직히 말해서, 방화에서 노래방 고민할 필요가 없다. 여기 오면 답 나온다. 가격, 시설, 분위기. 세 가지 다 잡은 곳. 전화 한 통이면 예약 끝. 망설이면 니가 손해.</p>
+        <p style="margin-top:24px;"><a href="tel:01062790862" style="font-size:1.3rem; font-weight:700; border:2px solid #635bff; padding:12px 32px; display:inline-block; letter-spacing:0.08em;">📞 지금 전화: 010-6279-0862</a></p>
+    </section>
+</main>
+
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">방화 노래방 이벤트, 데모 버전이 남긴 빈자리</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">다크소울 1 의 데모 버전과 정식판 간 지역 배치 차이는 단순한 컷缩减이 아니었어. 개발팀 내부에서 논의된 데이터만 봐도 초기 시나리오의 적 배치는 출시 버전보다 2 단계 이상 복잡했거든. 특히 숨겨진 요소를 찾는 플레이어가 많을수록 이 차이가 두드러지는 편이야. da</p>
+      </div>
+      <a href="posts/interview-002-4c6kdr.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 마포 셔츠룸 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 마포 셔츠룸 트렌드 정보 공유 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">글룸헤이븐 2 판, 방화 노래방 이벤트처럼 몰리던 클래스들 다잡았다</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">glorhantha,loomhaven,boardgame,class_card,balance_patch,rules_analysis,scenario_risk,edge_case,veteran_player,dungeon_crawl,mechanic_change 클래스 카드의 스탯</p>
+      </div>
+      <a href="posts/myth-001-1urjrkc.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="방화 노래방 이벤트 구분선" style="margin:24px 0;display:flex;align-items:center;justify-content:center"><div style="width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent)"></div></div>
+</section>
+<footer>
+    <div class="container">
+        <p>방화 노래방 이벤트 | 방화동 | 전화: <a href="tel:01062790862">010-6279-0862</a></p>
+        <p class="copyright">© 2025 t3b08-bh-kb-evt-1.vercel.app. All rights reserved. | 방화 No.1 노래방</p>
+    </div>
+</footer>
+
+
+<!-- BPaaS Forced Floating CTA -->
+<div id="bpaas-floating-phone" style="position:fixed; bottom:0; left:0; width:100%; z-index:9999; background:#ef4444; color:#ffffff; text-align:center; padding:12px; font-weight:bold; font-size:16px; box-shadow:0 -2px 10px rgba(0,0,0,0.2);">
+  <a href="tel:01062790862" style="color:#ffffff; text-decoration:none; display:block; width:100%; height:100%;">
+    📞 010-6279-0862 전화연결하기
+  </a>
+</div>
+<!-- End BPaaS Forced Floating CTA -->
+
 </body>
 </html>
